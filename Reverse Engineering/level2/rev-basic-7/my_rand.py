@@ -6,7 +6,7 @@ def rol(value, shift):
     value = bin(value)[2:]
     for i in value:
         queue.append(i)
-    if(len(queue)<8):
+    if(len(queue)<8): // 이 부분에서 조금 시간이 걸렸다. 8바이트를 생각해야 하니 만약 8바이트 미만으로 만들어지면 나머지는 0으로 채우는 기능
         while(len(queue)!=8):
             queue.appendleft('0')
     for j in range(0,shift):

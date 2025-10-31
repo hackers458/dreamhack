@@ -1,4 +1,4 @@
-<img width="447" height="348" alt="화면 캡처 2025-10-31 143751" src="https://github.com/user-attachments/assets/b3b60319-8429-4930-9cb8-5328ff9be171" /># 🧩 Reverse Engineering Challenge: Long Sleep
+# 🧩 Reverse Engineering Challenge: Long Sleep
 📖 문제 개요
 - 문제 이름: Long Sleep
 - 출처: 드림핵

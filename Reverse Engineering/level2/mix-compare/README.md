@@ -36,16 +36,21 @@ random_word[64]의 값에 현재 시간 시드값 기준 rand()값을 random_wor
 for j in range(16):
     for k in range(16):
         if (j & 1) != 0:
+            # j가 홀수일때
             copy_random_word[data[16 * j + k]] = random_word[k + 32]
         else:
+            # j가 짝수일때
             random_word[data[16 * j + k] + 32] = copy_random_word[k]
 ```
+를 수행한다.
 
-
+그 후 섞인 문자열을 출력한뒤 원본 문자열을 물어본다.
 # 🧠 접근 방법
-
+가령 ABCDEFGHIJKLMNOP를 RANDOM으로 만들어졌다고 해도 결국 바뀐 결과의 값인 "BFMLIKGJAHCONDPE" 처럼 고정이기에
+섞인 저 문자열을 생각해보면 A=0.... P = 15라 하면 [1, 5, 12, 11, 8, 10, 6, 9, 0, 7, 2, 14, 13, 3, 15, 4] 이렇게 인덱스를 알 수 있다.
+즉 BFMLIKGJAHCONDPE의 원래 인덱스가 각각 1 5 12 11 이렇기에 다시 원위치를 해주는 코드를 짜면 된다.
 
 
 # 📚 공부한 내용
-- 2의 보수를 취하는 방법과 -1의 2의보수인 FF로 NOT 연산을 빠르게 구할 수 있다는 점을 배웠다.
+- 입력한 문자열의 위치가 어떻게 최종적으로 바뀌었는지에 대한 이해를 필두로 코드를 짜는것을 배웠다.
 

@@ -32,14 +32,14 @@ random_word[64]의 값에 현재 시간 시드값 기준 rand()값을 random_wor
 
 
 
-'''python
+```python
 for j in range(16):
     for k in range(16):
         if (j & 1) != 0:
             copy_random_word[data[16 * j + k]] = random_word[k + 32]
         else:
             random_word[data[16 * j + k] + 32] = copy_random_word[k]
-'''
+```
 
 
 # 🧠 접근 방법

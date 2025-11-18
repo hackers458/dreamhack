@@ -1,4 +1,4 @@
-![KakaoTalk_20251118_193220695](https://github.com/user-attachments/assets/f7c9cd8f-b73c-4f18-a6fb-3ceaed849c0b)<img width="793" height="292" alt="스크린샷 2025-11-18 191253" src="https://github.com/user-attachments/assets/f1b51c65-a694-477b-812e-d3e0e0aa7ce0" /># 🧩 Reverse Engineering Challenge: baseball
+🧩 Reverse Engineering Challenge: baseball
 
 📖 문제 개요
 

@@ -1,4 +1,4 @@
-🧩 Reverse Engineering Challenge: baseball
+# 🧩 Reverse Engineering Challenge: baseball
 
 📖 문제 개요
 

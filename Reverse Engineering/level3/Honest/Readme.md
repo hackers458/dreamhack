@@ -56,7 +56,7 @@
 ida를 보면 각 함수와 비교하는 값 그리고 다음으로 넘어가는 리턴 함수가 있다.
 우리는 시작함수가 verify_28인걸 알 고 있으니.
 사진의 함수로 설명하자면 저 != 값이 바이너리로 FFFF3C값이다. 즉 FFFF3C 다음에 오는 값을 얻으면 되고.
-''' python
+``` python
 import idautils
 import idaapi
 import idc
@@ -72,11 +72,11 @@ for func_ea in idautils.Functions():
 
     idx = bytes.find(pattern)
     if idx != -1 and idx + len(pattern) < len(bytes):
-        next_val = bytes[idx + len(pattern)]
-        print(f"Function: {func_name}, Next byte: {hex(next_val)}") '''
+        next_val = bytes[idx + len(pattern)]'''
+        print(f"Function: {func_name}, Next byte: {hex(next_val)}") ```
 
 그 다음 함수에서 다음 함수로 넘어가는 함수들을 어떻게 분류하면?
-''' python
+``` python
 import idautils
 import idaapi
 import idc
@@ -102,7 +102,7 @@ def list_function_calls():
                     print(f"Function {func_name} calls {callee_name} at {hex(head)}")
 
 # 실행
-list_function_calls() '''
+list_function_calls() ```
 
 이걸로 할 수 있다.
 <img width="234" height="507" alt="화면 캡처 2026-01-10 181352" src="https://github.com/user-attachments/assets/22e49631-e51d-4ce4-bb28-164975cc8197" />

@@ -40,7 +40,7 @@
 
 | 이미지 | 설명 |
 | --- | --- |
-| <img width="1066" height="66" alt="파이썬 구현" src="https://github.com/user-attachments/assets/e2c6b95e-afbb-47e7-b555-d9e9026814f8" /> | 해당 동작을 그대로 **파이썬**에 구현하여 더 빠른 `sort()` 함수를 사용한 뒤 `sha256`으로 암호화한 값이 곧 플래그이다. 단, 파이썬에서는 4바이트가 넘칠 수 있으므로 `0xffffffff`로 AND 연산을 해줘야 한다. |
+| <img width="1066" height="66" alt="파이썬 구현" src="https://github.com/user-attachments/assets/e2c6b95e-afbb-47e7-b555-d9e9026814f8" /> | 해당 동작을 그대로 **파이썬**에 구현하여 정렬 기준을 만든 뒤 더 빠른 `sort()` 함수를 사용한 뒤 `sha256`으로 암호화한 값이 곧 플래그이다. 단, 파이썬에서는 4바이트가 넘칠 수 있으므로 `0xffffffff`로 AND 연산을 해줘야 한다. |
 
 ---
 

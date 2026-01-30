@@ -32,7 +32,7 @@
 
 | 단계 | 이미지 | 설명 |
 | --- | --- | --- |
-| Step 1 |<img width="341" height="302" alt="화면 캡처 2026-01-30 200319" src="https://github.com/user-attachments/assets/fe6e6999-afb1-458d-b2b2-7595043aa5ce" /> <img width="221" height="283" alt="화면 캡처 2026-01-30 200337" src="https://github.com/user-attachments/assets/0d76c7be-497b-4fbf-b1dd-24b083d4db47" />| 첫번째 사진에서는 ptrace값이 디버깅 아닐때는 0이므로 rand 값이 무의미, 결국 다음 값 = 다음값 + 1을 실행하며 두번째 사진은 rand값의 범위0~FF이므로 브루트포스로 찾으면 된다.|
+| Step 1 |<img width="341" height="302" alt="화면 캡처 2026-01-30 200319" src="https://github.com/user-attachments/assets/fe6e6999-afb1-458d-b2b2-7595043aa5ce" /> <img width="221" height="283" alt="화면 캡처 2026-01-30 200337" src="https://github.com/user-attachments/assets/0d76c7be-497b-4fbf-b1dd-24b083d4db47" />| 첫번째 사진에서는 ptrace값이 디버깅 아닐때는 0이므로 rand 값이 무의미, 결국 다음 값 = 다음값 + 전 값을 실행하며 두번째 사진은 rand값의 범위0~FF이므로 브루트포스로 찾으면 된다.(바이트 타입이므로 반드시 합한 후 & 0xff를 해줘야한다.|
 | Step 2 | <img width="407" height="279" alt="화면 캡처 2026-01-30 200535" src="https://github.com/user-attachments/assets/36896b22-c26c-4961-82b0-0b86f9cb9c52" /> | Main 함수에서는 크기 256바이트를 입력받으며 sub_13F1에 전달 |
 | Step 3 |<img width="513" height="189" alt="화면 캡처 2026-01-30 200958" src="https://github.com/user-attachments/assets/0a984526-a369-4c03-a96e-7cb6cf8ad422" /> | 즉 IV = 0 KEY 브루트포스로 다 주어진 샘이며 AES-128(키가16바이트이기에) 내가 입력한 걸 암호화 하여 결과가 out.txt에 저장한다. |
 

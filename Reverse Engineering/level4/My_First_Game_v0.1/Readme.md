@@ -32,8 +32,8 @@
 | Step 3 | <img width="838" height="634" alt="화면 캡처 2026-02-01 035407" src="https://github.com/user-attachments/assets/d0bc27b7-528d-4fe3-bcdb-c69b6135b3ac" />| 그리고 나서 sub_140001520()를 실행하고 일부를 발췌한것이다. 위에 X를 보니 +-300에서 갑자기 무언가를 하는 걸 볼 수 있다, -> 벽에 막히니 최대한 가까이 하도록 만드는게 아닌가?라고 추측할 수 있으며 아래에 X,무언가,무언가를 보아서 저 2개중 하나는 Z일 것이다. |
 | Step 4 |<img width="1469" height="888" alt="화면 캡처 2026-02-01 035907" src="https://github.com/user-attachments/assets/77fc341d-3811-4b00-b3e6-ac8fc57d4c0b" />| 실제로 x64dbg에서 &X의 값을 보면 움직일때 마다 바뀌는걸 알 수 있다.. 그렇다면 dword_140020698의 값을 한번 바꿔보니|
 | Step 4 |<img width="1355" height="892" alt="화면 캡처 2026-02-01 040108" src="https://github.com/user-attachments/assets/2d2cd6f4-c583-478b-a370-22c32b5a959c" />| 이렇게 바뀐걸 알 수 있다! 이런 식으로 바꾸면서 값을 볼 수 있다.|
-DH{7d32405fb8dc2608f3dcc026398bc7ce6a944a08702a1484495cf16bfe5cedf2}
 ---
+플래그 : DH{7d32405fb8dc2608f3dcc026398bc7ce6a944a08702a1484495cf16bfe5cedf2}
 
 ## 😪 막힌 부분
 - 치트엔진으로만 하려고 하다 보니까 생각보다 잘 안구해져서 IDA로 하면서 코드를 분석 한 뒤 무조건 XYZ를 건들이는 곳이 무조건 잇을 거라 생각하면서 하니까 풀 수 있게 되었다.

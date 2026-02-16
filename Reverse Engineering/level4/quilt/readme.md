@@ -30,8 +30,8 @@
 
 | 단계 | 이미지 | 설명 |
 |------|--------|------|
-| Step 1 | <img width="626" height="888" alt="화면 캡처 2026-02-17 004838" src="https://github.com/user-attachments/assets/64e29563-0958-4fea-a83d-63c5ed322203" />| 1번은 bmp의 헤더 관련 값들이다. 각 인덱스에 해당하는 값의 의미들은 notion에 적어놓았으므로 생략,2번이 중요한데, random값 x과 y[192]를 뽑아 strncpy에서 랜덤 y로 이루어진 192에서 x%(192-플래그위치)인 곳에 플래그를 삽입한다.<br>그 후|
-| Step 2 | <img width="462" height="339" alt="조건 확인" src="https://github.com/user-attachments/assets/73353782-0a9f-41cb-806e-6d7d09fda7ed" /> | 특정 조건을 확인한 뒤 값을 서로 바꾸는 동작을 한다. → **정렬 알고리즘(Stooge Sort)** 임을 알 수 있다. |
+| Step 1 | <img width="626" height="888" alt="화면 캡처 2026-02-17 004838" src="https://github.com/user-attachments/assets/64e29563-0958-4fea-a83d-63c5ed322203" />| 1번은 bmp의 헤더 관련 값들이다. 각 인덱스에 해당하는 값의 의미들은 notion에 적어놓았으므로 생략,2번이 중요한데, random값 x과 y[192]를 뽑아 strncpy에서 랜덤 y로 이루어진 192에서 x%(192-플래그위치)인 곳에 플래그를 삽입한다.<br>그 후 base64 함수에서 입력한 192의 길이의 문자열을 6비트로 끊어 새로운 256의 문자열을 만든다. 그리고 base64의 결과와 bmp파일,그리고 off_6을 전달한다(off_6은 구조체이다)|
+| Step 2 |<img width="777" height="881" alt="화면 캡처 2026-02-17 005635" src="https://github.com/user-attachments/assets/b7fe04fd-9c3c-4f2c-a4e6-4069174fbe43" />| 특정 조건을 확인한 뒤 값을 서로 바꾸는 동작을 한다. → **정렬 알고리즘(Stooge Sort)** 임을 알 수 있다. |
 | Step 3 | <img width="341" height="325" alt="정렬 결과 저장" src="https://github.com/user-attachments/assets/2e39ebf8-6671-43c9-bd6c-649c8020dd53" /> | 정렬된 결과를 기반으로 **SHA-256 값**을 저장하여 출력한다. |
 
 ---
@@ -41,6 +41,7 @@
 
 | 이미지 | 설명 |
 | --- | --- |
+| <img width="1066" height="66" alt="파이썬 구현" src="https://github.com/user-attachments/assets/e2c6b95e-afbb-47e7-b555-d9e9026814f8" /> | 해당 동작을 그대로 **파이썬**에 구현하여 더 빠른 `sort()` 함수를 사용한 뒤 `sha256`으로 암호화한 값이 곧 플래그이다. 단, 파이썬에서는 4바이트가 넘칠 수 있으므로 `0xffffffff`로 AND 연산을 해줘야 한다. |
 | <img width="1066" height="66" alt="파이썬 구현" src="https://github.com/user-attachments/assets/e2c6b95e-afbb-47e7-b555-d9e9026814f8" /> | 해당 동작을 그대로 **파이썬**에 구현하여 더 빠른 `sort()` 함수를 사용한 뒤 `sha256`으로 암호화한 값이 곧 플래그이다. 단, 파이썬에서는 4바이트가 넘칠 수 있으므로 `0xffffffff`로 AND 연산을 해줘야 한다. |
 
 ---

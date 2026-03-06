@@ -1,0 +1,38 @@
+var base = Process.getModuleByName("CaptainHook.exe").base;
+var gdipAddr = ptr(Process.getModuleByName("gdiplus.dll").enumerateExports().filter(e => e.name === "GdipDrawLineI")[0].address);
+
+var funcMap = {
+    0x1faa: "A",
+    0x34ca: "B",
+    0x498a: "C",
+    0x5dca: "D",
+    0x721a: "E",
+    0x86da: "F",
+    0x9b1a: "0",
+    0xb04d: "1",
+    0xc3ba: "2",
+    0xd86a: "3",
+    0xed1a: "4",
+    0x1015a: "5",
+    0x1160a: "6",
+    0x12b3a: "7",
+    0x13f76: "8",
+    0x1550a: "9",
+};
+
+var result = "";
+var lastDigit = "";
+
+Interceptor.attach(gdipAddr, {
+    onEnter: function(args) {
+        var retAddr = this.returnAddress.sub(base).toInt32();
+        var digit = funcMap[retAddr];
+        if (digit !== undefined && digit !== lastDigit) {
+            result += digit;
+            lastDigit = digit;
+            console.log("Result: " + result);
+        } else if (digit === undefined) {
+            lastDigit = "";
+        }
+    }
+});

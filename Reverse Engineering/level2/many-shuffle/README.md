@@ -1,4 +1,4 @@
-# 🧩 Reverse Engineering Challenge: mix-shuffle
+# 🧩 Reverse Engineering Challenge: many-shuffle
 
 📖 문제 개요
 

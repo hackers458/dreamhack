@@ -32,7 +32,7 @@
 
 | 단계 | 이미지 | 설명 |
 | --- | --- | --- |
-| Step 1 | <img width="1147" height="679" alt="화면 캡처 2026-03-11 200755" src="https://github.com/user-attachments/assets/46647e69-a7a3-4739-a469-7c21b503e4d4" />| 현재 게임 화면을 보면 울고 있는 고양이와 웃고 있는 고양이가 있다. 그리고 아래에는 흰블럭이 있는데 만약 클릭하면 검은색으로, 다시 클릭하면 흰색으로 바뀐다. <br> 총 크기는 가로 0~160 세로 5이다. |
+| Step 1 | <img width="1147" height="679" alt="화면 캡처 2026-03-11 200755" src="https://github.com/user-attachments/assets/46647e69-a7a3-4739-a469-7c21b503e4d4" />| 현재 게임 화면을 보면 울고 있는 고양이와 웃고 있는 고양이가 있다. 그리고 아래에는 흰블럭이 있는데 만약 클릭하면 검은색으로, 다시 클릭하면 흰색으로 바뀐다. <br> 총 크기는 가로 0~160 세로 5이며 한 그림당 만족해야하는 그림 칸은 15 x 5 크기이다. |
 | Step 2 | <img width="409" height="660" alt="화면 캡처 2026-03-11 201658" src="https://github.com/user-attachments/assets/9af42e3a-1475-471d-91e0-8c7b220fb942" /> | 그리고 lua 코드에서는 당연히 느낌적으로 클릭으로 인한 밝기와 어두움은 1과 0으로 표현되며 0.5초 마다 세팅을 업데이트 한다. 그러면 어떤 세팅을 유지하냐 |
 | Step 3 | <img width="703" height="606" alt="화면 캡처 2026-03-11 202150" src="https://github.com/user-attachments/assets/88f8015b-3e13-4e45-a8eb-fecf8c940ef9" />| 해당 코드의 윗부부는 각 15 x 5의 칸에서 boolean으로 이루어진 것이다. 가령 var_14_3은 var[3][14]를 의미하며 불이 켜지면 True로 되있다는 것이다. <br> 그리고 아랫부분에는 var_arr이라는 엄청 넓은 공간에 var의 값들과 여러 연산한 결과를 복잡하게 한다. 그러면 마지막 최종 부분은 어디인가|
 | Step 4 | <img width="703" height="606" alt="화면 캡처 2026-03-11 202150" src="https://github.com/user-attachments/assets/88f8015b-3e13-4e45-a8eb-fecf8c940ef9" />| 여기 밑줄 친 부분이 1이 나와야지 고양이가 웃음으로 바뀐다. 그리곤 다음 그림칸도 이런 식으로 진행한다.|

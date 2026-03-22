@@ -1,0 +1,2412 @@
+=== THREAD_0 @ 0x12c9 ===
+__int64 __fastcall start_routine(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(0);
+  if ( pthread_mutex_trylock(&lock_14) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_14);
+  sleep(2u);
+  if ( pthread_mutex_trylock(&lock_10) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_10);
+  sleep(0x10u);
+  if ( pthread_mutex_trylock(&lock_5) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_5);
+  sleep(4u);
+  if ( pthread_mutex_trylock(&lock_9) )
+    return 1LL;
+  sleep(3u);
+  if ( pthread_mutex_trylock(&lock_11) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_9);
+  sleep(1u);
+  pthread_mutex_unlock(&lock_11);
+  sleep(3u);
+  if ( pthread_mutex_trylock(&lock_15) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_15);
+  sleep(7u);
+  if ( pthread_mutex_trylock(&lock_3) )
+    return 1LL;
+  sleep(3u);
+  pthread_mutex_unlock(&lock_3);
+  sleep(7u);
+  if ( pthread_mutex_trylock(&lock_10) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_10);
+  sleep(3u);
+  if ( pthread_mutex_trylock(&lock_9) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_9);
+  return 0LL;
+}
+
+
+=== THREAD_1 @ 0x1540 ===
+__int64 __fastcall sub_1540(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(6u);
+  if ( pthread_mutex_trylock(&lock_14) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_14);
+  sleep(4u);
+  if ( pthread_mutex_trylock(&lock_14) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_14);
+  sleep(0xEu);
+  if ( pthread_mutex_trylock(&lock_15) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_15);
+  sleep(4u);
+  if ( pthread_mutex_trylock(&lock_14) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_14);
+  sleep(0x19u);
+  if ( pthread_mutex_trylock(&lock_13) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_13);
+  return 0LL;
+}
+
+
+=== THREAD_2 @ 0x16b7 ===
+__int64 __fastcall sub_16B7(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(0);
+  if ( pthread_mutex_trylock(&lock_3) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_3);
+  sleep(0x17u);
+  if ( pthread_mutex_trylock(&lock_6) )
+    return 1LL;
+  sleep(5u);
+  pthread_mutex_unlock(&lock_6);
+  sleep(0x16u);
+  if ( pthread_mutex_trylock(&lock_1) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_1);
+  return 0LL;
+}
+
+
+=== THREAD_3 @ 0x17ae ===
+__int64 __fastcall sub_17AE(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(0xBu);
+  if ( pthread_mutex_trylock(&lock_1) )
+    return 1LL;
+  sleep(4u);
+  pthread_mutex_unlock(&lock_1);
+  sleep(0x24u);
+  if ( pthread_mutex_trylock(&lock_0) )
+    return 1LL;
+  sleep(3u);
+  pthread_mutex_unlock(&lock_0);
+  return 0LL;
+}
+
+
+=== THREAD_4 @ 0x1865 ===
+__int64 __fastcall sub_1865(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_1) )
+    return 1LL;
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_10) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_10);
+  sleep(1u);
+  pthread_mutex_unlock(&lock_1);
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_14) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_14);
+  sleep(3u);
+  if ( pthread_mutex_trylock(&lock_6) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_6);
+  sleep(0x15u);
+  if ( pthread_mutex_trylock(&lock_7) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_7);
+  sleep(0xEu);
+  if ( pthread_mutex_trylock(&lock_9) )
+    return 1LL;
+  sleep(3u);
+  pthread_mutex_unlock(&lock_9);
+  sleep(4u);
+  if ( pthread_mutex_trylock(&lock_4) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_4);
+  return 0LL;
+}
+
+
+=== THREAD_5 @ 0x1a5c ===
+__int64 __fastcall sub_1A5C(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(0);
+  if ( pthread_mutex_trylock(&lock_5) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_5);
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_6) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_6);
+  sleep(5u);
+  if ( pthread_mutex_trylock(&lock_0) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_0);
+  sleep(0x11u);
+  if ( pthread_mutex_trylock(&lock_3) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_3);
+  sleep(0xCu);
+  if ( pthread_mutex_trylock(&lock_4) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_4);
+  return 0LL;
+}
+
+
+=== THREAD_6 @ 0x1bd3 ===
+__int64 __fastcall sub_1BD3(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(0xCu);
+  if ( pthread_mutex_trylock(&lock_6) )
+    return 1LL;
+  sleep(3u);
+  pthread_mutex_unlock(&lock_6);
+  sleep(9u);
+  if ( pthread_mutex_trylock(&lock_9) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_9);
+  sleep(5u);
+  if ( pthread_mutex_trylock(&lock_11) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_11);
+  sleep(0xFu);
+  if ( pthread_mutex_trylock(&lock_15) )
+    return 1LL;
+  sleep(3u);
+  pthread_mutex_unlock(&lock_15);
+  return 0LL;
+}
+
+
+=== THREAD_7 @ 0x1d0a ===
+__int64 __fastcall sub_1D0A(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(0x18u);
+  if ( pthread_mutex_trylock(&lock_3) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_3);
+  sleep(0x17u);
+  if ( pthread_mutex_trylock(&lock_9) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_9);
+  sleep(6u);
+  if ( pthread_mutex_trylock(&lock_12) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_12);
+  return 0LL;
+}
+
+
+=== THREAD_8 @ 0x1e01 ===
+__int64 __fastcall sub_1E01(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(4u);
+  if ( pthread_mutex_trylock(&lock_7) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_7);
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_10) )
+    return 1LL;
+  sleep(4u);
+  pthread_mutex_unlock(&lock_10);
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_5) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_5);
+  sleep(3u);
+  if ( pthread_mutex_trylock(&lock_2) )
+    return 1LL;
+  sleep(5u);
+  pthread_mutex_unlock(&lock_2);
+  sleep(0x14u);
+  if ( pthread_mutex_trylock(&lock_0) )
+    return 1LL;
+  sleep(3u);
+  pthread_mutex_unlock(&lock_0);
+  sleep(8u);
+  if ( pthread_mutex_trylock(&lock_14) )
+    return 1LL;
+  sleep(4u);
+  pthread_mutex_unlock(&lock_14);
+  return 0LL;
+}
+
+
+=== THREAD_9 @ 0x1fb8 ===
+__int64 __fastcall sub_1FB8(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(0xAu);
+  if ( pthread_mutex_trylock(&lock_4) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_4);
+  sleep(9u);
+  if ( pthread_mutex_trylock(&lock_4) )
+    return 1LL;
+  sleep(3u);
+  pthread_mutex_unlock(&lock_4);
+  sleep(4u);
+  if ( pthread_mutex_trylock(&lock_3) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_3);
+  sleep(0xCu);
+  if ( pthread_mutex_trylock(&lock_8) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_8);
+  sleep(3u);
+  if ( pthread_mutex_trylock(&lock_8) )
+    return 1LL;
+  sleep(3u);
+  if ( pthread_mutex_trylock(&lock_2) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_2);
+  sleep(1u);
+  pthread_mutex_unlock(&lock_8);
+  sleep(2u);
+  if ( pthread_mutex_trylock(&lock_14) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_14);
+  sleep(3u);
+  if ( pthread_mutex_trylock(&lock_1) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_1);
+  return 0LL;
+}
+
+
+=== THREAD_10 @ 0x21ef ===
+__int64 __fastcall sub_21EF(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(0);
+  if ( pthread_mutex_trylock(&lock_6) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_6);
+  sleep(3u);
+  if ( pthread_mutex_trylock(&lock_0) )
+    return 1LL;
+  sleep(4u);
+  pthread_mutex_unlock(&lock_0);
+  sleep(0xBu);
+  if ( pthread_mutex_trylock(&lock_8) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_8);
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_15) )
+    return 1LL;
+  sleep(4u);
+  pthread_mutex_unlock(&lock_15);
+  sleep(0xAu);
+  if ( pthread_mutex_trylock(&lock_5) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_5);
+  return 0LL;
+}
+
+
+=== THREAD_11 @ 0x2366 ===
+__int64 __fastcall sub_2366(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(0);
+  if ( pthread_mutex_trylock(&lock_15) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_15);
+  sleep(0xDu);
+  if ( pthread_mutex_trylock(&lock_11) )
+    return 1LL;
+  sleep(4u);
+  pthread_mutex_unlock(&lock_11);
+  sleep(0xAu);
+  if ( pthread_mutex_trylock(&lock_3) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_3);
+  sleep(4u);
+  if ( pthread_mutex_trylock(&lock_2) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_2);
+  sleep(3u);
+  if ( pthread_mutex_trylock(&lock_12) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_12);
+  sleep(9u);
+  if ( pthread_mutex_trylock(&lock_15) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_15);
+  sleep(2u);
+  if ( pthread_mutex_trylock(&lock_7) )
+    return 1LL;
+  sleep(2u);
+  if ( pthread_mutex_trylock(&lock_0) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_0);
+  sleep(1u);
+  pthread_mutex_unlock(&lock_7);
+  return 0LL;
+}
+
+
+=== THREAD_12 @ 0x259d ===
+__int64 __fastcall sub_259D(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(0);
+  if ( pthread_mutex_trylock(&lock_14) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_14);
+  sleep(9u);
+  if ( pthread_mutex_trylock(&lock_8) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_8);
+  sleep(0x24u);
+  if ( pthread_mutex_trylock(&lock_7) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_7);
+  return 0LL;
+}
+
+
+=== THREAD_13 @ 0x2694 ===
+__int64 __fastcall sub_2694(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(0xCu);
+  if ( pthread_mutex_trylock(&lock_6) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_6);
+  sleep(3u);
+  if ( pthread_mutex_trylock(&lock_10) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_10);
+  sleep(0x12u);
+  if ( pthread_mutex_trylock(&lock_5) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_5);
+  sleep(6u);
+  if ( pthread_mutex_trylock(&lock_1) )
+    return 1LL;
+  sleep(4u);
+  pthread_mutex_unlock(&lock_1);
+  sleep(5u);
+  if ( pthread_mutex_trylock(&lock_2) )
+    return 1LL;
+  sleep(4u);
+  pthread_mutex_unlock(&lock_2);
+  return 0LL;
+}
+
+
+=== THREAD_14 @ 0x280b ===
+__int64 __fastcall sub_280B(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_3) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_3);
+  sleep(3u);
+  if ( pthread_mutex_trylock(&lock_8) )
+    return 1LL;
+  sleep(3u);
+  pthread_mutex_unlock(&lock_8);
+  sleep(0xFu);
+  if ( pthread_mutex_trylock(&lock_14) )
+    return 1LL;
+  sleep(5u);
+  pthread_mutex_unlock(&lock_14);
+  sleep(0xCu);
+  if ( pthread_mutex_trylock(&lock_15) )
+    return 1LL;
+  sleep(5u);
+  pthread_mutex_unlock(&lock_15);
+  sleep(9u);
+  if ( pthread_mutex_trylock(&lock_12) )
+    return 1LL;
+  sleep(4u);
+  pthread_mutex_unlock(&lock_12);
+  return 0LL;
+}
+
+
+=== THREAD_15 @ 0x2982 ===
+__int64 __fastcall sub_2982(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(6u);
+  if ( pthread_mutex_trylock(&lock_12) )
+    return 1LL;
+  sleep(3u);
+  pthread_mutex_unlock(&lock_12);
+  sleep(0x17u);
+  if ( pthread_mutex_trylock(&lock_12) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_12);
+  sleep(0x16u);
+  if ( pthread_mutex_trylock(&lock_11) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_11);
+  return 0LL;
+}
+
+
+=== THREAD_16 @ 0x2a79 ===
+__int64 __fastcall sub_2A79(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(0);
+  if ( pthread_mutex_trylock(&lock_15) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_15);
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_14) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_14);
+  sleep(3u);
+  if ( pthread_mutex_trylock(&lock_4) )
+    return 1LL;
+  sleep(5u);
+  pthread_mutex_unlock(&lock_4);
+  sleep(0x13u);
+  if ( pthread_mutex_trylock(&lock_6) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_6);
+  sleep(2u);
+  if ( pthread_mutex_trylock(&lock_7) )
+    return 1LL;
+  sleep(3u);
+  pthread_mutex_unlock(&lock_7);
+  sleep(6u);
+  if ( pthread_mutex_trylock(&lock_1) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_1);
+  return 0LL;
+}
+
+
+=== THREAD_17 @ 0x2c30 ===
+__int64 __fastcall sub_2C30(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_1) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_1);
+  sleep(5u);
+  if ( pthread_mutex_trylock(&lock_2) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_2);
+  sleep(0x15u);
+  if ( pthread_mutex_trylock(&lock_2) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_2);
+  sleep(0x14u);
+  if ( pthread_mutex_trylock(&lock_1) )
+    return 1LL;
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_11) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_11);
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_5) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_1);
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_8) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_5);
+  sleep(1u);
+  pthread_mutex_unlock(&lock_8);
+  return 0LL;
+}
+
+
+=== THREAD_18 @ 0x2e27 ===
+__int64 __fastcall sub_2E27(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(8u);
+  if ( pthread_mutex_trylock(&lock_8) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_8);
+  sleep(0x11u);
+  if ( pthread_mutex_trylock(&lock_7) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_7);
+  sleep(3u);
+  if ( pthread_mutex_trylock(&lock_8) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_8);
+  sleep(3u);
+  if ( pthread_mutex_trylock(&lock_10) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_10);
+  sleep(0xBu);
+  if ( pthread_mutex_trylock(&lock_10) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_10);
+  sleep(8u);
+  if ( pthread_mutex_trylock(&lock_9) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_9);
+  return 0LL;
+}
+
+
+=== THREAD_19 @ 0x2fde ===
+__int64 __fastcall sub_2FDE(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(0xFu);
+  if ( pthread_mutex_trylock(&lock_4) )
+    return 1LL;
+  sleep(5u);
+  pthread_mutex_unlock(&lock_4);
+  sleep(0x24u);
+  if ( pthread_mutex_trylock(&lock_2) )
+    return 1LL;
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_10) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_2);
+  sleep(1u);
+  pthread_mutex_unlock(&lock_10);
+  return 0LL;
+}
+
+
+=== THREAD_20 @ 0x30d5 ===
+__int64 __fastcall sub_30D5(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(0);
+  if ( pthread_mutex_trylock(&lock_4) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_4);
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_7) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_7);
+  sleep(8u);
+  if ( pthread_mutex_trylock(&lock_13) )
+    return 1LL;
+  sleep(3u);
+  pthread_mutex_unlock(&lock_13);
+  sleep(2u);
+  if ( pthread_mutex_trylock(&lock_4) )
+    return 1LL;
+  sleep(5u);
+  pthread_mutex_unlock(&lock_4);
+  sleep(9u);
+  if ( pthread_mutex_trylock(&lock_1) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_1);
+  sleep(2u);
+  if ( pthread_mutex_trylock(&lock_5) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_5);
+  sleep(5u);
+  if ( pthread_mutex_trylock(&lock_7) )
+    return 1LL;
+  sleep(3u);
+  pthread_mutex_unlock(&lock_7);
+  return 0LL;
+}
+
+
+=== THREAD_21 @ 0x32cc ===
+__int64 __fastcall sub_32CC(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(3u);
+  if ( pthread_mutex_trylock(&lock_5) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_5);
+  sleep(0x15u);
+  if ( pthread_mutex_trylock(&lock_14) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_14);
+  sleep(0xCu);
+  if ( pthread_mutex_trylock(&lock_8) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_8);
+  sleep(6u);
+  if ( pthread_mutex_trylock(&lock_8) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_8);
+  sleep(3u);
+  if ( pthread_mutex_trylock(&lock_13) )
+    return 1LL;
+  sleep(4u);
+  pthread_mutex_unlock(&lock_13);
+  return 0LL;
+}
+
+
+=== THREAD_22 @ 0x3443 ===
+__int64 __fastcall sub_3443(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(6u);
+  if ( pthread_mutex_trylock(&lock_11) )
+    return 1LL;
+  sleep(3u);
+  pthread_mutex_unlock(&lock_11);
+  sleep(0xFu);
+  if ( pthread_mutex_trylock(&lock_5) )
+    return 1LL;
+  sleep(4u);
+  pthread_mutex_unlock(&lock_5);
+  sleep(0x14u);
+  if ( pthread_mutex_trylock(&lock_5) )
+    return 1LL;
+  sleep(5u);
+  pthread_mutex_unlock(&lock_5);
+  return 0LL;
+}
+
+
+=== THREAD_23 @ 0x353a ===
+__int64 __fastcall sub_353A(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(0xEu);
+  if ( pthread_mutex_trylock(&lock_13) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_13);
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_13) )
+    return 1LL;
+  sleep(4u);
+  pthread_mutex_unlock(&lock_13);
+  sleep(7u);
+  if ( pthread_mutex_trylock(&lock_1) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_1);
+  sleep(9u);
+  if ( pthread_mutex_trylock(&lock_12) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_12);
+  return 0LL;
+}
+
+
+=== THREAD_24 @ 0x3671 ===
+__int64 __fastcall sub_3671(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(0);
+  if ( pthread_mutex_trylock(&lock_13) )
+    return 1LL;
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_9) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_13);
+  sleep(3u);
+  pthread_mutex_unlock(&lock_9);
+  sleep(0xEu);
+  if ( pthread_mutex_trylock(&lock_0) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_0);
+  sleep(9u);
+  if ( pthread_mutex_trylock(&lock_1) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_1);
+  sleep(6u);
+  if ( pthread_mutex_trylock(&lock_3) )
+    return 1LL;
+  sleep(2u);
+  if ( pthread_mutex_trylock(&lock_8) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_3);
+  sleep(2u);
+  pthread_mutex_unlock(&lock_8);
+  return 0LL;
+}
+
+
+=== THREAD_25 @ 0x3828 ===
+__int64 __fastcall sub_3828(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(6u);
+  if ( pthread_mutex_trylock(&lock_0) )
+    return 1LL;
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_2) )
+    return 1LL;
+  sleep(4u);
+  pthread_mutex_unlock(&lock_0);
+  sleep(1u);
+  pthread_mutex_unlock(&lock_2);
+  sleep(8u);
+  if ( pthread_mutex_trylock(&lock_12) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_12);
+  sleep(0xCu);
+  if ( pthread_mutex_trylock(&lock_14) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_14);
+  sleep(2u);
+  if ( pthread_mutex_trylock(&lock_5) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_5);
+  return 0LL;
+}
+
+
+=== THREAD_26 @ 0x399f ===
+__int64 __fastcall sub_399F(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(5u);
+  if ( pthread_mutex_trylock(&lock_7) )
+    return 1LL;
+  sleep(3u);
+  pthread_mutex_unlock(&lock_7);
+  sleep(0x12u);
+  if ( pthread_mutex_trylock(&lock_12) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_12);
+  sleep(0x16u);
+  if ( pthread_mutex_trylock(&lock_6) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_6);
+  return 0LL;
+}
+
+
+=== THREAD_27 @ 0x3a96 ===
+__int64 __fastcall sub_3A96(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_2) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_2);
+  sleep(8u);
+  if ( pthread_mutex_trylock(&lock_7) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_7);
+  sleep(3u);
+  if ( pthread_mutex_trylock(&lock_6) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_6);
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_1) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_1);
+  sleep(2u);
+  if ( pthread_mutex_trylock(&lock_2) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_2);
+  sleep(6u);
+  if ( pthread_mutex_trylock(&lock_13) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_13);
+  sleep(0xAu);
+  if ( pthread_mutex_trylock(&lock_3) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_3);
+  sleep(2u);
+  if ( pthread_mutex_trylock(&lock_6) )
+    return 1LL;
+  sleep(5u);
+  pthread_mutex_unlock(&lock_6);
+  sleep(8u);
+  if ( pthread_mutex_trylock(&lock_0) )
+    return 1LL;
+  sleep(3u);
+  pthread_mutex_unlock(&lock_0);
+  return 0LL;
+}
+
+
+=== THREAD_28 @ 0x3d0d ===
+__int64 __fastcall sub_3D0D(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(9u);
+  if ( pthread_mutex_trylock(&lock_10) )
+    return 1LL;
+  sleep(5u);
+  pthread_mutex_unlock(&lock_10);
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_6) )
+    return 1LL;
+  sleep(4u);
+  pthread_mutex_unlock(&lock_6);
+  sleep(5u);
+  if ( pthread_mutex_trylock(&lock_13) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_13);
+  sleep(5u);
+  if ( pthread_mutex_trylock(&lock_13) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_13);
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_14) )
+    return 1LL;
+  sleep(3u);
+  pthread_mutex_unlock(&lock_14);
+  sleep(0x13u);
+  if ( pthread_mutex_trylock(&lock_7) )
+    return 1LL;
+  sleep(4u);
+  pthread_mutex_unlock(&lock_7);
+  return 0LL;
+}
+
+
+=== THREAD_29 @ 0x3ec4 ===
+__int64 __fastcall sub_3EC4(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(0);
+  if ( pthread_mutex_trylock(&lock_10) )
+    return 1LL;
+  sleep(4u);
+  pthread_mutex_unlock(&lock_10);
+  sleep(0xBu);
+  if ( pthread_mutex_trylock(&lock_9) )
+    return 1LL;
+  sleep(3u);
+  pthread_mutex_unlock(&lock_9);
+  sleep(5u);
+  if ( pthread_mutex_trylock(&lock_12) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_12);
+  sleep(0x15u);
+  if ( pthread_mutex_trylock(&lock_1) )
+    return 1LL;
+  sleep(3u);
+  pthread_mutex_unlock(&lock_1);
+  sleep(6u);
+  if ( pthread_mutex_trylock(&lock_10) )
+    return 1LL;
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_13) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_10);
+  sleep(1u);
+  pthread_mutex_unlock(&lock_13);
+  return 0LL;
+}
+
+
+=== THREAD_30 @ 0x407b ===
+__int64 __fastcall sub_407B(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(6u);
+  if ( pthread_mutex_trylock(&lock_6) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_6);
+  sleep(0x1Au);
+  if ( pthread_mutex_trylock(&lock_2) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_2);
+  sleep(9u);
+  if ( pthread_mutex_trylock(&lock_5) )
+    return 1LL;
+  sleep(4u);
+  pthread_mutex_unlock(&lock_5);
+  return 0LL;
+}
+
+
+=== THREAD_31 @ 0x4172 ===
+__int64 __fastcall sub_4172(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(0);
+  if ( pthread_mutex_trylock(&lock_8) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_8);
+  sleep(0x18u);
+  if ( pthread_mutex_trylock(&lock_10) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_10);
+  sleep(2u);
+  if ( pthread_mutex_trylock(&lock_4) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_4);
+  sleep(8u);
+  if ( pthread_mutex_trylock(&lock_12) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_12);
+  return 0LL;
+}
+
+
+=== THREAD_32 @ 0x42a9 ===
+__int64 __fastcall sub_42A9(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(0xAu);
+  if ( pthread_mutex_trylock(&lock_7) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_7);
+  sleep(0xFu);
+  if ( pthread_mutex_trylock(&lock_1) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_1);
+  sleep(2u);
+  if ( pthread_mutex_trylock(&lock_1) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_1);
+  sleep(7u);
+  if ( pthread_mutex_trylock(&lock_15) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_15);
+  sleep(7u);
+  if ( pthread_mutex_trylock(&lock_3) )
+    return 1LL;
+  sleep(5u);
+  pthread_mutex_unlock(&lock_3);
+  sleep(2u);
+  if ( pthread_mutex_trylock(&lock_4) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_4);
+  sleep(2u);
+  if ( pthread_mutex_trylock(&lock_4) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_4);
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_11) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_11);
+  return 0LL;
+}
+
+
+=== THREAD_33 @ 0x44e0 ===
+__int64 __fastcall sub_44E0(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(0);
+  if ( pthread_mutex_trylock(&lock_0) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_0);
+  sleep(2u);
+  if ( pthread_mutex_trylock(&lock_12) )
+    return 1LL;
+  sleep(3u);
+  pthread_mutex_unlock(&lock_12);
+  sleep(0x1Bu);
+  if ( pthread_mutex_trylock(&lock_9) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_9);
+  sleep(0x16u);
+  if ( pthread_mutex_trylock(&lock_6) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_6);
+  return 0LL;
+}
+
+
+=== THREAD_34 @ 0x4617 ===
+__int64 __fastcall sub_4617(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(0);
+  if ( pthread_mutex_trylock(&lock_12) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_12);
+  sleep(0x10u);
+  if ( pthread_mutex_trylock(&lock_7) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_7);
+  sleep(8u);
+  if ( pthread_mutex_trylock(&lock_11) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_11);
+  sleep(5u);
+  if ( pthread_mutex_trylock(&lock_2) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_2);
+  sleep(3u);
+  if ( pthread_mutex_trylock(&lock_15) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_15);
+  sleep(0xCu);
+  if ( pthread_mutex_trylock(&lock_3) )
+    return 1LL;
+  sleep(4u);
+  pthread_mutex_unlock(&lock_3);
+  return 0LL;
+}
+
+
+=== THREAD_35 @ 0x47ce ===
+__int64 __fastcall sub_47CE(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(0);
+  if ( pthread_mutex_trylock(&lock_13) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_13);
+  sleep(9u);
+  if ( pthread_mutex_trylock(&lock_13) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_13);
+  sleep(6u);
+  if ( pthread_mutex_trylock(&lock_5) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_5);
+  sleep(0xCu);
+  if ( pthread_mutex_trylock(&lock_4) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_4);
+  sleep(3u);
+  if ( pthread_mutex_trylock(&lock_5) )
+    return 1LL;
+  sleep(3u);
+  pthread_mutex_unlock(&lock_5);
+  return 0LL;
+}
+
+
+=== THREAD_36 @ 0x4945 ===
+__int64 __fastcall sub_4945(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(0);
+  if ( pthread_mutex_trylock(&lock_3) )
+    return 1LL;
+  sleep(5u);
+  pthread_mutex_unlock(&lock_3);
+  sleep(4u);
+  if ( pthread_mutex_trylock(&lock_5) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_5);
+  sleep(6u);
+  if ( pthread_mutex_trylock(&lock_3) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_3);
+  sleep(0xCu);
+  if ( pthread_mutex_trylock(&lock_10) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_10);
+  sleep(5u);
+  if ( pthread_mutex_trylock(&lock_10) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_10);
+  sleep(2u);
+  if ( pthread_mutex_trylock(&lock_8) )
+    return 1LL;
+  sleep(2u);
+  if ( pthread_mutex_trylock(&lock_11) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_8);
+  sleep(3u);
+  pthread_mutex_unlock(&lock_11);
+  return 0LL;
+}
+
+
+=== THREAD_37 @ 0x4b3c ===
+__int64 __fastcall sub_4B3C(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(0);
+  if ( pthread_mutex_trylock(&lock_0) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_0);
+  sleep(2u);
+  if ( pthread_mutex_trylock(&lock_11) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_11);
+  sleep(2u);
+  if ( pthread_mutex_trylock(&lock_6) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_6);
+  sleep(3u);
+  if ( pthread_mutex_trylock(&lock_9) )
+    return 1LL;
+  sleep(4u);
+  pthread_mutex_unlock(&lock_9);
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_15) )
+    return 1LL;
+  sleep(5u);
+  pthread_mutex_unlock(&lock_15);
+  sleep(0x13u);
+  if ( pthread_mutex_trylock(&lock_9) )
+    return 1LL;
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_6) )
+    return 1LL;
+  sleep(3u);
+  pthread_mutex_unlock(&lock_6);
+  sleep(1u);
+  pthread_mutex_unlock(&lock_9);
+  return 0LL;
+}
+
+
+=== THREAD_38 @ 0x4d33 ===
+__int64 __fastcall sub_4D33(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(0xBu);
+  if ( pthread_mutex_trylock(&lock_7) )
+    return 1LL;
+  sleep(3u);
+  pthread_mutex_unlock(&lock_7);
+  sleep(0x15u);
+  if ( pthread_mutex_trylock(&lock_13) )
+    return 1LL;
+  sleep(4u);
+  pthread_mutex_unlock(&lock_13);
+  sleep(4u);
+  if ( pthread_mutex_trylock(&lock_10) )
+    return 1LL;
+  sleep(3u);
+  pthread_mutex_unlock(&lock_10);
+  sleep(5u);
+  if ( pthread_mutex_trylock(&lock_12) )
+    return 1LL;
+  sleep(3u);
+  if ( pthread_mutex_trylock(&lock_13) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_12);
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_6) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_13);
+  sleep(1u);
+  pthread_mutex_unlock(&lock_6);
+  return 0LL;
+}
+
+
+=== THREAD_39 @ 0x4eea ===
+__int64 __fastcall sub_4EEA(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(6u);
+  if ( pthread_mutex_trylock(&lock_11) )
+    return 1LL;
+  sleep(4u);
+  pthread_mutex_unlock(&lock_11);
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_14) )
+    return 1LL;
+  sleep(3u);
+  pthread_mutex_unlock(&lock_14);
+  sleep(0x16u);
+  if ( pthread_mutex_trylock(&lock_6) )
+    return 1LL;
+  sleep(4u);
+  pthread_mutex_unlock(&lock_6);
+  sleep(5u);
+  if ( pthread_mutex_trylock(&lock_2) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_2);
+  sleep(0xAu);
+  if ( pthread_mutex_trylock(&lock_6) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_6);
+  return 0LL;
+}
+
+
+=== THREAD_40 @ 0x5061 ===
+__int64 __fastcall sub_5061(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(0xFu);
+  if ( pthread_mutex_trylock(&lock_8) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_8);
+  sleep(4u);
+  if ( pthread_mutex_trylock(&lock_11) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_11);
+  sleep(0x1Cu);
+  if ( pthread_mutex_trylock(&lock_8) )
+    return 1LL;
+  sleep(5u);
+  pthread_mutex_unlock(&lock_8);
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_0) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_0);
+  return 0LL;
+}
+
+
+=== THREAD_41 @ 0x5198 ===
+__int64 __fastcall sub_5198(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_4) )
+    return 1LL;
+  sleep(3u);
+  pthread_mutex_unlock(&lock_4);
+  sleep(0x14u);
+  if ( pthread_mutex_trylock(&lock_5) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_5);
+  sleep(3u);
+  if ( pthread_mutex_trylock(&lock_10) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_10);
+  sleep(0xCu);
+  if ( pthread_mutex_trylock(&lock_0) )
+    return 1LL;
+  sleep(3u);
+  pthread_mutex_unlock(&lock_0);
+  return 0LL;
+}
+
+
+=== THREAD_42 @ 0x52cf ===
+__int64 __fastcall sub_52CF(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(3u);
+  if ( pthread_mutex_trylock(&lock_11) )
+    return 1LL;
+  sleep(4u);
+  pthread_mutex_unlock(&lock_11);
+  sleep(0x17u);
+  if ( pthread_mutex_trylock(&lock_10) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_10);
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_0) )
+    return 1LL;
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_14) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_0);
+  sleep(2u);
+  pthread_mutex_unlock(&lock_14);
+  sleep(5u);
+  if ( pthread_mutex_trylock(&lock_2) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_2);
+  sleep(4u);
+  if ( pthread_mutex_trylock(&lock_12) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_12);
+  return 0LL;
+}
+
+
+=== THREAD_43 @ 0x5486 ===
+__int64 __fastcall sub_5486(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_5) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_5);
+  sleep(0xBu);
+  if ( pthread_mutex_trylock(&lock_8) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_8);
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_11) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_11);
+  sleep(4u);
+  if ( pthread_mutex_trylock(&lock_0) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_0);
+  sleep(4u);
+  if ( pthread_mutex_trylock(&lock_10) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_10);
+  sleep(0xEu);
+  if ( pthread_mutex_trylock(&lock_12) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_12);
+  sleep(0xDu);
+  if ( pthread_mutex_trylock(&lock_6) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_6);
+  return 0LL;
+}
+
+
+=== THREAD_44 @ 0x567d ===
+__int64 __fastcall sub_567D(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(4u);
+  if ( pthread_mutex_trylock(&lock_13) )
+    return 1LL;
+  sleep(3u);
+  pthread_mutex_unlock(&lock_13);
+  sleep(8u);
+  if ( pthread_mutex_trylock(&lock_8) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_8);
+  sleep(0xCu);
+  if ( pthread_mutex_trylock(&lock_13) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_13);
+  sleep(0x13u);
+  if ( pthread_mutex_trylock(&lock_2) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_2);
+  sleep(2u);
+  if ( pthread_mutex_trylock(&lock_15) )
+    return 1LL;
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_14) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_14);
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_12) )
+    return 1LL;
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_3) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_15);
+  sleep(1u);
+  pthread_mutex_unlock(&lock_3);
+  sleep(1u);
+  pthread_mutex_unlock(&lock_12);
+  return 0LL;
+}
+
+
+=== THREAD_45 @ 0x58b4 ===
+__int64 __fastcall sub_58B4(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(7u);
+  if ( pthread_mutex_trylock(&lock_9) )
+    return 1LL;
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_5) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_5);
+  sleep(3u);
+  pthread_mutex_unlock(&lock_9);
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_9) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_9);
+  sleep(5u);
+  if ( pthread_mutex_trylock(&lock_15) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_15);
+  sleep(0x11u);
+  if ( pthread_mutex_trylock(&lock_9) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_9);
+  sleep(3u);
+  if ( pthread_mutex_trylock(&lock_4) )
+    return 1LL;
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_14) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_14);
+  sleep(1u);
+  pthread_mutex_unlock(&lock_4);
+  sleep(2u);
+  if ( pthread_mutex_trylock(&lock_8) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_8);
+  sleep(8u);
+  if ( pthread_mutex_trylock(&lock_5) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_5);
+  return 0LL;
+}
+
+
+=== THREAD_46 @ 0x5b2b ===
+__int64 __fastcall sub_5B2B(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(2u);
+  if ( pthread_mutex_trylock(&lock_8) )
+    return 1LL;
+  sleep(3u);
+  pthread_mutex_unlock(&lock_8);
+  sleep(6u);
+  if ( pthread_mutex_trylock(&lock_12) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_12);
+  sleep(0x1Bu);
+  if ( pthread_mutex_trylock(&lock_0) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_0);
+  sleep(0xBu);
+  if ( pthread_mutex_trylock(&lock_10) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_10);
+  sleep(4u);
+  if ( pthread_mutex_trylock(&lock_4) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_4);
+  return 0LL;
+}
+
+
+=== THREAD_47 @ 0x5ca2 ===
+__int64 __fastcall sub_5CA2(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_5) )
+    return 1LL;
+  sleep(3u);
+  if ( pthread_mutex_trylock(&lock_9) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_5);
+  sleep(1u);
+  pthread_mutex_unlock(&lock_9);
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_1) )
+    return 1LL;
+  sleep(4u);
+  pthread_mutex_unlock(&lock_1);
+  sleep(0x20u);
+  if ( pthread_mutex_trylock(&lock_10) )
+    return 1LL;
+  sleep(4u);
+  if ( pthread_mutex_trylock(&lock_6) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_10);
+  sleep(1u);
+  pthread_mutex_unlock(&lock_6);
+  return 0LL;
+}
+
+
+=== THREAD_48 @ 0x5e19 ===
+__int64 __fastcall sub_5E19(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(2u);
+  if ( pthread_mutex_trylock(&lock_8) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_8);
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_1) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_1);
+  sleep(0xBu);
+  if ( pthread_mutex_trylock(&lock_6) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_6);
+  sleep(0x20u);
+  if ( pthread_mutex_trylock(&lock_1) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_1);
+  return 0LL;
+}
+
+
+=== THREAD_49 @ 0x5f50 ===
+__int64 __fastcall sub_5F50(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_12) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_12);
+  sleep(3u);
+  if ( pthread_mutex_trylock(&lock_15) )
+    return 1LL;
+  sleep(3u);
+  if ( pthread_mutex_trylock(&lock_14) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_14);
+  sleep(1u);
+  pthread_mutex_unlock(&lock_15);
+  sleep(6u);
+  if ( pthread_mutex_trylock(&lock_3) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_3);
+  return 0LL;
+}
+
+
+=== THREAD_50 @ 0x6087 ===
+__int64 __fastcall sub_6087(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_13) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_13);
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_7) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_7);
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_13) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_13);
+  return 0LL;
+}
+
+
+=== THREAD_51 @ 0x617e ===
+__int64 __fastcall sub_617E(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(0x1Bu);
+  if ( pthread_mutex_trylock(&lock_8) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_8);
+  sleep(0xAu);
+  if ( pthread_mutex_trylock(&lock_7) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_7);
+  return 0LL;
+}
+
+
+=== THREAD_52 @ 0x6235 ===
+__int64 __fastcall sub_6235(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(6u);
+  if ( pthread_mutex_trylock(&lock_6) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_6);
+  sleep(0x14u);
+  if ( pthread_mutex_trylock(&lock_11) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_11);
+  sleep(2u);
+  if ( pthread_mutex_trylock(&lock_13) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_13);
+  sleep(0x14u);
+  if ( pthread_mutex_trylock(&lock_15) )
+    return 1LL;
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_0) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_0);
+  sleep(3u);
+  pthread_mutex_unlock(&lock_15);
+  sleep(2u);
+  if ( pthread_mutex_trylock(&lock_6) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_6);
+  return 0LL;
+}
+
+
+=== THREAD_53 @ 0x63ec ===
+__int64 __fastcall sub_63EC(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(0x28u);
+  if ( pthread_mutex_trylock(&lock_13) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_13);
+  sleep(6u);
+  if ( pthread_mutex_trylock(&lock_9) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_9);
+  return 0LL;
+}
+
+
+=== THREAD_54 @ 0x64a3 ===
+__int64 __fastcall sub_64A3(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(5u);
+  if ( pthread_mutex_trylock(&lock_2) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_2);
+  sleep(0xBu);
+  if ( pthread_mutex_trylock(&lock_0) )
+    return 1LL;
+  sleep(4u);
+  pthread_mutex_unlock(&lock_0);
+  sleep(0x1Cu);
+  if ( pthread_mutex_trylock(&lock_7) )
+    return 1LL;
+  sleep(4u);
+  pthread_mutex_unlock(&lock_7);
+  return 0LL;
+}
+
+
+=== THREAD_55 @ 0x659a ===
+__int64 __fastcall sub_659A(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(0x15u);
+  if ( pthread_mutex_trylock(&lock_13) )
+    return 1LL;
+  sleep(4u);
+  pthread_mutex_unlock(&lock_13);
+  sleep(4u);
+  if ( pthread_mutex_trylock(&lock_4) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_4);
+  sleep(5u);
+  if ( pthread_mutex_trylock(&lock_4) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_4);
+  sleep(0xAu);
+  if ( pthread_mutex_trylock(&lock_14) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_14);
+  sleep(9u);
+  if ( pthread_mutex_trylock(&lock_11) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_11);
+  return 0LL;
+}
+
+
+=== THREAD_56 @ 0x6711 ===
+__int64 __fastcall sub_6711(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(0xDu);
+  if ( pthread_mutex_trylock(&lock_8) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_8);
+  sleep(0x19u);
+  if ( pthread_mutex_trylock(&lock_11) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_11);
+  sleep(0xCu);
+  if ( pthread_mutex_trylock(&lock_5) )
+    return 1LL;
+  sleep(5u);
+  pthread_mutex_unlock(&lock_5);
+  return 0LL;
+}
+
+
+=== THREAD_57 @ 0x6808 ===
+__int64 __fastcall sub_6808(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(0xDu);
+  if ( pthread_mutex_trylock(&lock_8) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_8);
+  sleep(0x24u);
+  if ( pthread_mutex_trylock(&lock_2) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_2);
+  sleep(5u);
+  if ( pthread_mutex_trylock(&lock_3) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_3);
+  return 0LL;
+}
+
+
+=== THREAD_58 @ 0x68ff ===
+__int64 __fastcall sub_68FF(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(0);
+  if ( pthread_mutex_trylock(&lock_10) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_10);
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_2) )
+    return 1LL;
+  sleep(5u);
+  pthread_mutex_unlock(&lock_2);
+  sleep(0xBu);
+  if ( pthread_mutex_trylock(&lock_12) )
+    return 1LL;
+  sleep(3u);
+  pthread_mutex_unlock(&lock_12);
+  sleep(0xAu);
+  if ( pthread_mutex_trylock(&lock_14) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_14);
+  sleep(0xEu);
+  if ( pthread_mutex_trylock(&lock_2) )
+    return 1LL;
+  sleep(5u);
+  pthread_mutex_unlock(&lock_2);
+  return 0LL;
+}
+
+
+=== THREAD_59 @ 0x6a76 ===
+__int64 __fastcall sub_6A76(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(0x11u);
+  if ( pthread_mutex_trylock(&lock_0) )
+    return 1LL;
+  sleep(4u);
+  pthread_mutex_unlock(&lock_0);
+  sleep(2u);
+  if ( pthread_mutex_trylock(&lock_15) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_15);
+  sleep(5u);
+  if ( pthread_mutex_trylock(&lock_0) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_0);
+  sleep(0xCu);
+  if ( pthread_mutex_trylock(&lock_15) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_15);
+  sleep(7u);
+  if ( pthread_mutex_trylock(&lock_12) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_12);
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_9) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_9);
+  return 0LL;
+}
+
+
+=== THREAD_60 @ 0x6c2d ===
+__int64 __fastcall sub_6C2D(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(0xDu);
+  if ( pthread_mutex_trylock(&lock_1) )
+    return 1LL;
+  sleep(5u);
+  pthread_mutex_unlock(&lock_1);
+  sleep(8u);
+  if ( pthread_mutex_trylock(&lock_1) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_1);
+  sleep(0xFu);
+  if ( pthread_mutex_trylock(&lock_7) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_7);
+  sleep(6u);
+  if ( pthread_mutex_trylock(&lock_11) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_11);
+  sleep(3u);
+  if ( pthread_mutex_trylock(&lock_6) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_6);
+  sleep(3u);
+  if ( pthread_mutex_trylock(&lock_13) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_13);
+  return 0LL;
+}
+
+
+=== THREAD_61 @ 0x6de4 ===
+__int64 __fastcall sub_6DE4(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(0x1Eu);
+  if ( pthread_mutex_trylock(&lock_3) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_3);
+  sleep(5u);
+  if ( pthread_mutex_trylock(&lock_15) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_15);
+  sleep(4u);
+  if ( pthread_mutex_trylock(&lock_11) )
+    return 1LL;
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_14) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_14);
+  sleep(1u);
+  pthread_mutex_unlock(&lock_11);
+  sleep(0xAu);
+  if ( pthread_mutex_trylock(&lock_9) )
+    return 1LL;
+  sleep(3u);
+  if ( pthread_mutex_trylock(&lock_2) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_2);
+  sleep(1u);
+  pthread_mutex_unlock(&lock_9);
+  return 0LL;
+}
+
+
+=== THREAD_62 @ 0x6f9b ===
+__int64 __fastcall sub_6F9B(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(6u);
+  if ( pthread_mutex_trylock(&lock_3) )
+    return 1LL;
+  sleep(3u);
+  if ( pthread_mutex_trylock(&lock_12) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_3);
+  sleep(1u);
+  pthread_mutex_unlock(&lock_12);
+  sleep(7u);
+  if ( pthread_mutex_trylock(&lock_3) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_3);
+  sleep(0x1Fu);
+  if ( pthread_mutex_trylock(&lock_1) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_1);
+  sleep(4u);
+  if ( pthread_mutex_trylock(&lock_7) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_7);
+  return 0LL;
+}
+
+
+=== THREAD_63 @ 0x7112 ===
+__int64 __fastcall sub_7112(char *a1)
+{
+  unsigned int seconds; // [rsp+1Ch] [rbp-4h]
+
+  seconds = *a1;
+  pthread_barrier_wait(&barrier);
+  sleep(seconds);
+  sleep(6u);
+  if ( pthread_mutex_trylock(&lock_4) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_4);
+  sleep(2u);
+  if ( pthread_mutex_trylock(&lock_14) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_14);
+  sleep(0xFu);
+  if ( pthread_mutex_trylock(&lock_12) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_12);
+  sleep(0xEu);
+  if ( pthread_mutex_trylock(&lock_14) )
+    return 1LL;
+  sleep(1u);
+  pthread_mutex_unlock(&lock_14);
+  sleep(9u);
+  if ( pthread_mutex_trylock(&lock_4) )
+    return 1LL;
+  sleep(5u);
+  pthread_mutex_unlock(&lock_4);
+  sleep(1u);
+  if ( pthread_mutex_trylock(&lock_3) )
+    return 1LL;
+  sleep(2u);
+  pthread_mutex_unlock(&lock_3);
+  return 0LL;
+}
+
